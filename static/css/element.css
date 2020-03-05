@@ -1,0 +1,171 @@
+/* element ui 弹出框自定义样式 */
+.el-popover {
+  background: #2d3035;
+  color: #8a8d93;
+  border-color: #34373d;
+}
+
+/*  弹窗自定义样式  */
+.el-popper[x-placement^=left] .popper__arrow {
+  right: -7px !important;
+  top: 7px !important;
+}
+
+/* 弹窗在右侧时  */
+.el-popper[x-placement^=right] .popper__arrow,
+.el-popper[x-placement^=right] .popper__arrow::after {
+  border-right-color: #34373d;
+}
+
+/* 弹窗在左侧时 */
+.el-popper[x-placement^=left] .popper__arrow,
+.el-popper[x-placement^=left] .popper__arrow::after {
+  border-left-color: #34373d;
+}
+
+/* 弹窗在下侧时 */
+.el-popper[x-placement^=bottom] .popper__arrow {
+  border-bottom-color: #2d3035 !important;
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow::after {
+  border-bottom-color: #34373d;
+}
+
+/* 文本输入框的样式 */
+.el-input__inner {
+  background-color: #2d3035 !important;
+  color: #828d93;
+  border: 1px solid #34373d !important;
+  transition: all 0.4s ease-out 0s;
+}
+
+/* checkbox 样式 */
+.el-checkbox__input.is-checked+.el-checkbox__label {
+  color: rgb(194, 120, 120) !important;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: rgb(194, 120, 120) !important;
+  border-color: rgb(194, 120, 120) !important;
+}
+
+.el-input-group__append,
+.el-input-group__prepend {
+  background-color: transparent;
+  color: #909399;
+  vertical-align: middle;
+  display: table-cell;
+  position: relative;
+  border: 1px transparent;
+  border-radius: 4px;
+  padding: 0 20px;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.el-button--default {
+  color: color-yiq(#DB6574);
+  background-color: #DB6574 !important;
+  border-color: #DB6574 !important;
+  color: white !important;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.el-button--default:hover {
+  color: color-yiq(#d44658);
+  background-color: #d44658 !important;
+  border-color: #d13c4f !important;
+}
+
+.el-button--default:focus,
+.el-button--default.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(219, 101, 116, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(219, 101, 116, 0.5);
+}
+
+.el-select .el-input {
+  width: 7rem;
+}
+
+.input-with-select .el-input-group__prepend {
+  background-color: #fff;
+}
+
+/* 下拉菜单自定义黑色样式 */
+.el-select-dropdown {
+  background: #2d3035 !important;
+  border: 1px solid #22252a !important;
+}
+
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover,
+.el-select-dropdown__item.selected {
+  background-color: #34373d;
+  color: rgb(194, 120, 120);
+  transition: all 0.7s ease-out 0s;
+}
+
+
+/* 对话框自定义样式 */
+/* 包裹对话框的父容器 */
+.el-dialog__wrapper {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* 对话框整体 */
+.el-dialog {
+  width: 100%;
+  background: #2d3035;
+  color: #8a8d93;
+  border-color: #34373d;
+}
+
+/* 对话框标题 */
+.el-dialog__title {
+  color: #8a8d93;
+}
+
+/*  折叠面板样式  */
+.el-collapse {
+  border-top: 1px solid #34373d;
+  border-bottom: 1px solid #34373d;
+  color: #8a8d93;
+}
+
+/* 折叠头 */
+.el-collapse-item__header {
+  background: rgb(38, 38, 38);
+  padding: 1.8rem;
+  font-size: .85rem;
+  color: #8a8d93;
+  border-bottom: 1px solid #34373d;
+}
+
+.el-collapse-item__wrap {
+  border-bottom: 1px solid #34373d;
+  background: transparent;
+
+}
+
+/* 折叠面板体 */
+.el-collapse-item__content {
+  background: rgb(38, 38, 38);
+  padding-bottom: 0;
+}
+
+/* 输入区域 */
+.el-textarea__inner {
+  color: #828d93 !important;
+  background: #2d3035;
+  border: 1px solid #1d1d1d;
+}
+
+.el-textarea__inner:active,
+.el-textarea__inner:focus,
+.el-textarea__inner:hover {
+  border-color: rgb(194, 120, 120);
+}

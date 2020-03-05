@@ -1,0 +1,530 @@
+body {
+  background: #22252a;
+}
+
+select {
+  display: block;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #828d93 !important;
+  box-shadow: inset 0 0 2px rgb(194, 120, 120) !important;
+  border: 0 !important;
+  background: #2d3035 !important;
+  outline: 0 !important;
+  transition: all 1.2s ease-in-out 0s;
+  -webkit-transition: all 1.2s ease-in-out 0s;
+  -moz-transition: all 1.2s ease-in-out 0s;
+}
+
+::-webkit-input-placeholder {
+  color: #828d93 !important;
+}
+
+::-moz-input-placeholder {
+  color: #828d93 !important;
+}
+
+::-ms-input-placeholder {
+  color: #828d93 !important;
+}
+
+/* 文本框样式 */
+input[type=text],
+input[type=number] {
+  color: #828d93 !important;
+  border: 1px solid #34373d !important;
+  background: #2d3035 !important;
+  transition: all 0.25s ease-in-out
+}
+
+input[type=text]:active,
+input[type=text]:focus,
+input[type=number]:active,
+input[type=number]:focus {
+  outline: 0 !important;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0 .125rem rgb(194, 120, 120) !important;
+
+}
+
+.form-check-label {
+  margin-right: .5rem;
+}
+
+.form-check-label:last-child {
+  margin-right: 0;
+}
+
+a.nav-link {
+  color: #495057;
+}
+
+a.nav-link.active {
+  color: rgb(194, 120, 120);
+}
+
+/* 充当body最为根结点的样式*/
+.wrapper-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInLeft; */
+}
+
+/* 指针样式为 pointer  */
+.cur-pointer {
+  cursor: pointer;
+}
+
+/* 没有内边距 */
+.no-padding {
+  padding: 0;
+}
+
+/* 没有滚动条 */
+.no-scroll {
+  overflow: hidden !important;
+}
+
+/* 自动适配滚动条 */
+.scroll {
+  overflow: auto !important;
+}
+
+/* 满屏显示 */
+.full-screen {
+  height: 100%;
+}
+
+.full-size {
+  width: 100%;
+}
+
+/* 占屏幕的80% 且自动适配滚动条 */
+.half-screen {
+  height: 80%;
+  overflow: auto;
+}
+
+.font-small {
+  font-size: 0.5rem;
+}
+
+.m-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.none {
+  display: none;
+}
+
+/* 黑色主题下的字体颜色 */
+.font-dark {
+  color: #8a8d93;
+}
+
+.card {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  height: 100%;
+}
+
+/* 深色卡片样式 */
+.card-dark {
+  background: rgb(29, 29, 29);
+}
+
+
+.card-dark .card-header {
+  background: rgb(29, 29, 29) !important;
+  color: #c27878;
+  font-size: 1rem;
+  border-bottom: 1px solid #34373d;
+}
+
+/*  非主要面板的card样式  */
+.card-dark.sec-card .card-header {
+  background: #2d3035 !important;
+  color: #a5a7ab;
+}
+
+.card-dark.sec-card .card-body,
+.card-dark.sec-card {
+  background: #2d3035 !important;
+}
+
+/* 弹性布局的卡片底部 */
+.card-footer-flex {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+
+.card-footer-flex-center {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+/* 黑暗风格的导航 */
+.nav-dark {
+  border-bottom: 1px solid #34373d;
+}
+
+.nav-dark .nav-link.active,
+.nav-dark .nav-link:hover {
+  color: #c27878 !important;
+  background: transparent !important;
+  border-color: #34374d !important;
+  transition: all .5s ease-in-out .1s;
+  -webkit-transition: all .5s ease-in-out .1s;
+  -moz-transition: all .5s ease-in-out .1s;
+}
+
+/* 媒体列表的深色风格样式 */
+.list-group-item-dark {
+  padding: 1rem 0;
+  background: rgb(38, 38, 38) !important;
+  color: #8a8d93 !important;
+  text-decoration: none;
+  border-bottom: 1px solid #34373d;
+}
+
+.list-group-item-dark:hover,
+.list-group-item-dark:visited {
+  background: #2d3035 !important;
+  color: rgb(194, 120, 120) !important;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  border-bottom: 1px solid #22252a;
+}
+
+/* 黑暗风格的模拟弹窗 */
+.modal-dark {
+  color: #828d93 !important;
+}
+
+.modal-dark .modal-content {
+  background: #2d3035;
+}
+
+.modal-dark .modal-header,
+.modal-dark .modal-footer {
+  border-color: #343a40 !important;
+}
+
+.block {
+  padding: 15px;
+  background: #2d3035;
+  color: #8a8d93;
+  height: 100%;
+  /* margin-bottom: 20px; */
+}
+
+.block .title {
+  margin-bottom: 20px;
+}
+
+.block .title strong:first-child {
+  font-size: 1rem;
+  color: #a5a7ab;
+}
+
+
+.category-card,
+.category-card>.card-body,
+.brand-card,
+.brand-card>.card-body {
+  overflow-y: auto;
+}
+
+.table tr {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInLeft;
+}
+
+.table tr:hover,
+.table td {
+  transition: all 0.7s ease 0s;
+  -webkit-transition: all 0.7s ease 0s;
+  -moz-transition: all 0.7s ease 0s;
+}
+
+
+.table td {
+  border-color: #343a40 !important;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+
+.table-responsive td.active,
+td.active:focus,
+td.active:active {
+  box-shadow: inset 0 0 3px rgb(194, 120, 120) !important;
+  outline: 0;
+  caret-color: rgb(194, 120, 120);
+  border-radius: 0.25rem;
+}
+
+::selection {
+  background: rgb(194, 120, 120);
+}
+
+
+.btn-pink {
+  color: color-yiq(#DB6574);
+  background-color: #DB6574 !important;
+  border-color: #DB6574 !important;
+  color: white !important;
+  margin-bottom: 0.2rem;
+}
+
+.btn-pink:hover {
+  color: color-yiq(#d44658);
+  background-color: #d44658 !important;
+  border-color: #d13c4f !important;
+}
+
+.btn-pink:focus,
+.btn-pink.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(219, 101, 116, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(219, 101, 116, 0.5);
+}
+
+.btn-pink.disabled,
+.btn-pink:disabled {
+  color: color-yiq(#DB6574);
+  background-color: #DB6574;
+  border-color: #DB6574;
+}
+
+.btn-pink:not(:disabled):not(.disabled):active,
+.btn-pink:not(:disabled):not(.disabled).active,
+.show>.btn-pink.dropdown-toggle {
+  color: color-yiq(#d13c4f);
+  background-color: #d13c4f;
+  border-color: #cf3145;
+}
+
+.btn-pink:not(:disabled):not(.disabled):active:focus,
+.btn-pink:not(:disabled):not(.disabled).active:focus,
+.show>.btn-pink.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(219, 101, 116, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(219, 101, 116, 0.5);
+}
+
+/* 粉色链接形式的btn */
+.btn-link-pink {
+  /* 导航菜单下的链接 */
+  color: rgb(194, 120, 120);
+  text-decoration: none;
+}
+
+.btn-link-pink:hover,
+.btn-link-pink:active,
+.btn-link-pink:visited {
+  color: rgb(254, 120, 120);
+  text-decoration: none;
+}
+
+/* 假装是父容器 */
+.fake-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* 在框的下面 */
+  background: #2d3035;
+  display: none;
+  z-index: 999;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInTop;
+}
+
+/* 搜索结果·从上到下显示所使用的动画 */
+@keyframes fade-in-top {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* 搜索结果·从下到上显示所使用的动画 */
+@keyframes fade-in-bottom {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* 从左到右渐入显示的动画  */
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* 从右到座渐入显示的动画  */
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* 从右到座渐入显示的动画  */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, -100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/**
+动画效果
+*/
+.fade-in-left {
+  animation-name: fade-in-left;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.fade-in-right {
+  animation-name: fade-in-right;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.fade-in-top {
+  animation-name: fade-in-top;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.fade-in-bottom {
+  animation-name: fade-in-bottom;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+/* 关闭按钮的图标 */
+.close-icon.el-icon-close {
+  font-size: 150%;
+  cursor: pointer;
+  float: right;
+  margin: 1rem 1rem 0 0;
+  display: block;
+}
+
+.close-icon.el-icon-close:hover {
+  color: #22252a;
+}
+
+/* 以下css用于聊天气泡 */
+.bubble {
+  position: relative;
+  padding: 12px;
+  margin-bottom:10px;
+  width: 140px;
+  max-height: 100px;
+  min-height: 50px;
+  background: #2d3035;
+  color: #8a8d93;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  /* 自动换行 */
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.bubble.left{
+  margin-left: 10px;
+}
+.bubble.right{
+  margin-right: 10px;
+}
+
+.bubble:before.left {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  right: 100%;
+  top: 38px;
+  border-top: 13px solid transparent;
+  border-right: 26px solid rgb(194, 120, 120);
+  border-bottom: 13px solid transparent;
+}
+
+.bubble:after.right {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  right: 100%;
+  top: 38px;
+  border-top: 13px solid transparent;
+  border-right: 26px solid rgb(194, 120, 120);
+  border-bottom: 13px solid transparent;
+}
+
+@media all and (min-width:768px) and (max-width:992px) {
+  .rep-margin {
+    margin-bottom: 0;
+  }
+}
+
+@media all and (max-width:768px) {
+  .no-scroll {
+    overflow: auto !important;
+  }
+}
